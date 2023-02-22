@@ -10,6 +10,7 @@ final class UrlRoutingTestTests: XCTestCase {
     do {
      _ =  try router.match(request: request)
     } catch {
+      print("\(error)")
       XCTFail()
     }
   }
